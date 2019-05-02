@@ -1,0 +1,10 @@
+{
+  "name": "booking-app-model",
+  "version": "1.0.0",
+  "dependencies": {
+    "@sap/cds": "^3.5"
+  },
+  "scripts": {
+    "build": "cds build --clean"
+  }
+}
