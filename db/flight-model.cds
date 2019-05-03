@@ -6,8 +6,8 @@ entity Airports {
       City       : String(30)  @title: "City";
       Country    : String(50)  @title: "Country";
       Elevation  : Integer default 0;
-      Latitude   : Decimal(12, 9);
-      Longitude  : Decimal(12, 9);
+      Latitude   : Double;
+      Longitude  : Double;
       Departures : Association to many FlightRoutes on Departures.StartingAirport=$self;
       Arrivals   : Association to many FlightRoutes on Arrivals.DestinationAirport=$self;
 };
