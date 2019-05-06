@@ -6,8 +6,8 @@ entity Airports {
       City       : String(30)  @title: "City";
       Country    : String(50)  @title: "Country";
       Elevation  : Integer default 0;
-      Latitude   : Double;
-      Longitude  : Double;
+      Latitude   : Decimal(12, 9);
+      Longitude  : Decimal(12, 9);
 };
 
 entity Airline {
