@@ -9,6 +9,6 @@ entity Bookings : Managed {
       CustomerName       : String(50);
       EmailAddress       : String(50);
       DateOfTravel       : DateTime       not null;
-      Cost               : Decimal(10, 2) not null;
+      Cost               : Double		  not null;
       NumberOfPassengers : Integer        default 1;
 };
