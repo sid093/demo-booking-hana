@@ -8,15 +8,12 @@ entity Airports {
       Elevation  : Integer default 0;
       Latitude   : Double;
       Longitude  : Double;
-      Departures : Association to many FlightRoutes on Departures.StartingAirport=$self;
-      Arrivals   : Association to many FlightRoutes on Arrivals.DestinationAirport=$self;
 };
 
 entity Airline {
 	key IATA     : String(2);
       Name      : String(100) @title: "Airline";
       Country   : String(50)  @title: "Country";
-      Routes    : Association to many FlightRoutes on Routes.Airline=$self;
 };
 
 entity FlightRoutes {
